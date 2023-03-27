@@ -9,65 +9,145 @@
         <!--Para agregar iconos de FontAwesome
             usar <i class="fas fa-info-circle"></i> por ejemplo
         -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/00935a5649.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
 
     <body>
-        <div class="navbar">
-
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo-codoacodo.png" alt="logo de Codo a Codo" class="img-fluid logo" style="height: 5rem">
+                    Conferencia Bs As
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link active" href="#cover">Conferencia</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link" href="#speakers">Oradores</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link" href="#place-and-date">Lugar y Fecha</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link" href="#become-a-speaker">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link text-success" href="#">Comprar Tickets</a>
+                    </li>
+                </ul>
+            </div>
+            
         </div>
 
         <div class="container-fluid">
-            <div class="cover">
-
-            </div>
-            <div class="row container-fluid speakers">
-                <div class="speaker-tile">
-                    <img alt="Steve Jobs" src="img/steve-jobs.jpg">
-
-                </div>
-                <div class="speaker-tile">
-                    <img alt="Bill Gates" src="img/bill-gates.jpg">
-
-                </div>
-                <div class="speaker-tile">
-                    <img alt="Ada Lovelace" src="img/ada-lovelace.jpeg">
-
-                </div>                
-            </div>
-
-            <div class="row">
-                <div class="col-6">
-                    <img alt="" src="">
-
-                </div>
-                <div class="col-6">
-
+            <div class="row cover align-items-center" id="cover">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 text-light text-md-end">
+                    <h2>Conferencia Bs As</h2>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del ecento, a otros estudiantes de Codo a Codo, y los oradores de primer nivel the tenemos para ti. Te esperamos!</p>
+                    <a href="#speakers"><button class="btn btn-outline-light">Quiero ser orador</button></a>
+                    <button class="btn btn-success">Comprar tickets</button>
                 </div>
             </div>
 
-            <div class="registration-form">
+            <div class="container-fluid speakers" id="speakers">
+                <div class="text-uppercase text-center mt-5">
+                    <p>Conoce a los</p>
+                    <h3>oradores</h3>
+                </div>
+                <div class="row justify-content-center mb-5 mt-3">
+                    <div class="p-0 m-2 speaker-tile card">
+                        <img class="card-img-top img-fluid" alt="Steve Jobs" src="img/steve-jobs.jpg">
+                        <div class="card-body">
+                            <h4>Steve Jobs</h4>
+                            <p class="card-text">Some text</p>
 
+                        </div>
+                    </div>
+                    <div class="p-0 m-2 speaker-tile card">
+                        <img class="card-img-top img-fluid" alt="Bill Gates" src="img/bill-gates.jpg">
+                        <div class="card-body">
+                            <h4>Steve Jobs</h4>
+                            <p class="card-text">Some text</p>
+
+                        </div>
+                    </div>
+                    <div class="p-0 m-2 speaker-tile card">
+                        <img class="card-img-top img-fluid" alt="Ada Lovelace" src="img/ada-lovelace.jpeg">
+                        <div class="card-body">
+                            <h4>Steve Jobs</h4>
+                            <p class="card-text">Some text</p>
+
+                        </div>
+                    </div>  
+                </div>          
+            </div>
+
+            <div class="row " id="place-and-date">
+                <div class="col-sm-6 p-0">
+                    <img alt="honolulu" src="/img/honolulu.jpg" class="img-fluid ">
+
+                </div>
+                <div class="col-sm-6 p-5 bg-dark text-light">
+                    <h5>Bs As - Octubre</h5>
+                    <p class="small">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al area urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600m² de superficie)</p>
+                    <button class="btn btn-outline-light">Conocé más</button>
+                </div>
+            </div>
+
+            <div class="registration-form container fluid" id="become-a-speaker">
+                <div class="text-uppercase text-center mt-5">
+                    <p>Conviértete en un</p>
+                    <h3>orador</h3>
+                </div>
+                <div class="text-center">
+                    <p>Anótate como orador para dar una <abbr title="Everyone speaks">charla ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
+                </div>
+                <form action="#">
+                    <div class="row mt-2">
+                        <div class="col-sm">
+                            <input type="name" class="form-control form-control-custom ms-1 mb-1" id="name" placeholder="Nombre" name="name">
+                        </div>
+                        <div class="col-sm">
+                            <input type="last-name" class="form-control form-control-custom ms-1 mb-1" id="last-name" placeholder="Apellido" name="last-name">
+                        </div>
+                    </div>
+                    <div class="row col">
+                        <textarea class="form-control form-control-custom ms-3 mb-3" rows="8" columns="10" id="details" name="text" placeholder="Sobre qué quieres hablar?"></textarea>
+                    </div>
+                    <p class="small text-secondary">Recuerda incluir un título para tu charla</p>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success btn-block">Enviar</button>
+                    </div>
+                    
+                  </form> 
             </div>
 
         </div>
+
+        <a href="#navbar">
+            <button class="btn btn-success btn-up">
+                <i class="fa-solid fa-angles-up fa-3x"></i>
+            </button>
+        </a>
 
         
-        <div class="container-fluid">
-            <footer>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Prensa</a></li>
-                    <li><a href="#">Conferencias</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Privacidad</a></li>
-                    <li><a href="#">Estudiantes</a></li>
+        <footer>
+            <div class="container-fluid footer-custom mt-5 p-5">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item mx-4"><a class="nav-link text-light" href="#">FAQ</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link text-light" href="#">Contacto</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link text-light" href="#">Prensa</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link text-light" href="#">Conferencias</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link text-light" href="#">Términos y Condiciones</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link text-light" href="#">Privacidad</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link text-light" href="#">Estudiantes</a></li>
                 </ul>
-            </footer>
-        </div>
+            </div>
+        </footer>
 
     </body>
 </html>

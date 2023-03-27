@@ -1,0 +1,38 @@
+
+
+.logo {
+    height: 1rem;
+}
+
+.navbar-custom {
+    font-size: 1.2rem;
+}
+
+.nav-item-custom {
+    margin: auto 0.2rem;
+}
+
+.cover {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/img/palacio-aguas.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.speaker-tile {
+    max-width: 400px;
+}
+
+.form-control-custom {
+    max-width: 95%;
+}
+
+.footer-custom {
+    background: linear-gradient( rgb(16, 28, 83), rgb(25, 42, 121));
+}
+
+.btn-up {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 50% !important
+}
