@@ -22,12 +22,22 @@
     max-width: 400px;
 }
 
-.form-control-custom {
-    max-width: 95%;
+#details {
+    width: 97%;
+}
+
+@media (max-width: 768px) {
+    #details {
+        width: 94%;
+    }
+}
+
+.registration-form {
+    width: 70vw;
 }
 
 .footer-custom {
-    background: linear-gradient( rgb(16, 28, 83), rgb(25, 42, 121));
+    background: linear-gradient(rgb(34, 47, 107), rgb(18, 25, 56) );
 }
 
 .btn-up {
