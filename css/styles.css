@@ -31,12 +31,11 @@
 }
 
 .registration-form, .buy-tickets-info  {
-    max-width: 65vw;
+    max-width: 65vw !important;
 }
 
 .discount-category {
-    max-width: 300px;
-    background-color: blue;
+    max-width: 300px !important;
 }
 
 .footer-custom {
