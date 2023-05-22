@@ -30,12 +30,13 @@
     }
 }
 
-.registration-form,.buy-tickets-info  {
+.registration-form, .buy-tickets-info  {
     max-width: 65vw;
 }
 
 .discount-category {
     max-width: 300px;
+    background-color: blue;
 }
 
 .footer-custom {
