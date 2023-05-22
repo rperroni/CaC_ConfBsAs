@@ -45,7 +45,7 @@
                             <a class="nav-link" href="#become-a-speaker">Conviértete en orador</a>
                         </li>
                         <li class="nav-item nav-item-custom  ">
-                            <a class="nav-link text-success" href="#">Comprar Tickets</a>
+                            <a class="nav-link text-success" href="#buy-tickets">Comprar Tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +61,7 @@
                     <h2>Conferencia Bs As</h2>
                     <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del ecento, a otros estudiantes de Codo a Codo, y los oradores de primer nivel the tenemos para ti. Te esperamos!</p>
                     <a href="#become-a-speaker"><button class="btn btn-outline-light">Quiero ser orador</button></a>
-                    <button class="btn btn-success">Comprar tickets</button>
+                    <a href="#buy-tickets"><button class="btn btn-success">Comprar tickets</button></a>
                 </div>
             </div>
 
@@ -129,10 +129,10 @@
                 </div>
                 <form action="#">
                     <div class="row mt-2">
-                        <div class="col-sm">
+                        <div class="col-sm-6">
                             <input type="name" class="form-control form-control-custom ms-1 mb-1" id="name" placeholder="Nombre" name="name">
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm-6">
                             <input type="last-name" class="form-control form-control-custom ms-1 mb-1" id="last-name" placeholder="Apellido" name="last-name">
                         </div>
                     </div>
@@ -144,11 +144,98 @@
                         <button type="submit" class="btn btn-success btn-block">Enviar</button>
                     </div>
                     
-                  </form> 
+                </form> 
+            </div>
+
+            <div class="container-fluid buy-tickets text-center" id="buy-tickets">
+                <div class="row justify-content-center mx-4 my-5">
+                    <div class="card border-primary discount-category mx-2 my-2">
+                        <div class="card-header bg-transparent border-0">
+                            <h3>Estudiante</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Tienen un descuento</p>
+                            <h4>80%</h4>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-secondary small">
+                            * presentar documentación 
+                        </div>
+                    </div>
+                    <div class="card border-success discount-category mx-2 my-2">
+                        <div class="card-header bg-transparent border-0">
+                            <h3>Trainee</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Tienen un descuento</p>
+                            <h4>50%</h4>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-secondary small">
+                            * presentar documentación 
+                        </div>
+                    </div>
+                    <div class="card border-warning discount-category mx-2 my-2">
+                        <div class="card-header bg-transparent border-0">
+                            <h3>Junior</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Tienen un descuento</p>
+                            <h4>15%</h4>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-secondary small">
+                            * presentar documentación 
+                        </div>
+                    </div>
+                </div>
+                <div class="text-uppercase text-center mt-5">
+                    <p>venta</p>
+                    <h1>valor de ticket $200</h1>
+                </div>
+
+                <form class="buy-tickets-info mx-auto" onsubmit="return false;">
+                    <div class="row mt-3">
+                        <div class="col-sm-6 my-2">
+                            <input type="text" class="form-control" placeholder="Nombre" name="name">
+                        </div>
+                        <div class="col-sm-6 my-2">
+                            <input type="text" class="form-control" placeholder="Apellido" name="last-name">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class=""><input type="text" class="form-control" placeholder="Correo electrónico" name="email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 my-2 text-start">
+                            <label for="cantidad" class="form-label">Cantidad</label>
+                            <input type="number" min="0" class="form-control" placeholder="cantidad" name="cantidad" id="amount-of-tickets">
+                        </div>
+                        <div class="col-sm-6 my-2 text-start">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <select class="form-select" id="discount-type">
+                                <option>Estudiante</option>
+                                <option>Trainee</option>
+                                <option>Junior</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="bg-info text-start my-5 alert alert-primary" id="total-value">
+                        Total a pagar: $
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-sm-6 my-2 d-grid">
+                            <button type="reset" id="btn-clear" class="btn btn-success btn-block">Borrar</button>
+                        </div>
+                        <div class="col-sm-6 my-2 d-grid">
+                            <button type="submit" id="btn-total" class="btn btn-success btn-block">Resumen</button>
+                        </div>
+                    </div>
+                </form>
             </div>
 
         </div>
-
+        
         <!-- GO UP BUTTON -->
         <a href="#navbar">
             <button class="btn btn-success btn-up">
@@ -176,4 +263,5 @@
 
     <!-- JavaScript  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/logic.js"></script>
 </html>
