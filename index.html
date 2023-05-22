@@ -191,50 +191,47 @@
                     <h1>valor de ticket $200</h1>
                 </div>
 
-                <div class="buy-tickets-info ">
+                <form class="buy-tickets-info mx-auto justify-content-center" onsubmit="return false;">
+                    <div class="row mt-3">
+                        <div class="col-sm-6 my-2">
+                            <input type="text" class="form-control" placeholder="Nombre" name="name">
+                        </div>
+                        <div class="col-sm-6 my-2">
+                            <input type="text" class="form-control" placeholder="Apellido" name="last-name">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class=""><input type="text" class="form-control" placeholder="Correo electrónico" name="email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 my-2 text-start">
+                            <label for="cantidad" class="form-label">Cantidad</label>
+                            <input type="number" min="0" class="form-control" placeholder="cantidad" name="cantidad" id="amount-of-tickets">
+                        </div>
+                        <div class="col-sm-6 my-2 text-start">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <select class="form-select" id="discount-type">
+                                <option>Estudiante</option>
+                                <option>Trainee</option>
+                                <option>Junior</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                    </div>
 
-                    <form class="mx-auto" onsubmit="return false;">
-                        <div class="row mt-3">
-                            <div class="col-sm-6 my-2">
-                                <input type="text" class="form-control" placeholder="Nombre" name="name">
-                            </div>
-                            <div class="col-sm-6 my-2">
-                                <input type="text" class="form-control" placeholder="Apellido" name="last-name">
-                            </div>
-                        </div>
-                        <div class="row my-2">
-                            <div class=""><input type="text" class="form-control" placeholder="Correo electrónico" name="email"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 my-2 text-start">
-                                <label for="cantidad" class="form-label">Cantidad</label>
-                                <input type="number" min="0" class="form-control" placeholder="cantidad" name="cantidad" id="amount-of-tickets">
-                            </div>
-                            <div class="col-sm-6 my-2 text-start">
-                                <label for="categoria" class="form-label">Categoria</label>
-                                <select class="form-select" id="discount-type">
-                                    <option>Estudiante</option>
-                                    <option>Trainee</option>
-                                    <option>Junior</option>
-                                    <option>Otro</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="bg-info text-start my-5 alert alert-primary" id="total-value">
+                        Total a pagar: $
+                    </div>
 
-                        <div class="bg-info text-start my-5 alert alert-primary" id="total-value">
-                            Total a pagar: $
+                    <div class="row mt-5">
+                        <div class="col-sm-6 my-2 d-grid">
+                            <button type="reset" id="btn-clear" class="btn btn-success btn-block">Borrar</button>
                         </div>
-
-                        <div class="row mt-5">
-                            <div class="col-sm-6 my-2 d-grid">
-                                <button type="reset" id="btn-clear" class="btn btn-success btn-block">Borrar</button>
-                            </div>
-                            <div class="col-sm-6 my-2 d-grid">
-                                <button type="submit" id="btn-total" class="btn btn-success btn-block">Resumen</button>
-                            </div>
+                        <div class="col-sm-6 my-2 d-grid">
+                            <button type="submit" id="btn-total" class="btn btn-success btn-block">Resumen</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
 
         </div>
