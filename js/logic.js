@@ -1,7 +1,7 @@
 const CATEGORIAS_DE_DESCUENTO = {
-    "Estudiante": 0.8,
+    "Estudiante": 0.2,
     "Trainee": 0.5,
-    "Junior": 0.15,
+    "Junior": 0.85,
     "Otro": 1,
 };
 
